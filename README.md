@@ -4,11 +4,10 @@ Você já se sentiu sobrecarregado ao tentar encontrar perfis de desenvolvedores
 
 O **GitHub Explorer** nasceu dessa necessidade. Ele transforma a exploração de perfis do GitHub em uma jornada visualmente atraente e direta. Em vez de se perder em abas, você obtém uma visão clara e organizada da história de um desenvolvedor, seus projetos mais importantes e sua atividade, tudo em um design moderno e limpo.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://github-explorer-jcnok.vercel.app/)
+[![Deploy with Vercel](https://vercel.com/button)](https://github-explorer-kappa-woad.vercel.app/)
 
-*(Observação: Você pode substituir o link acima pelo link de deploy do seu projeto na Vercel.)*
 
-![Pré-visualização do GitHub Explorer](https://via.placeholder.com/1200x600/0f172a/6d28d9?text=GitHub+Explorer+App)
+[![Pré-visualização do GitHub Explorer](image.png)](https://github-explorer-kappa-woad.vercel.app/)
 
 ---
 
