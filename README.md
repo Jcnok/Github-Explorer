@@ -1,76 +1,66 @@
-# GitHub Explorer Pro
+# GitHub Explorer: Uma Nova Janela para o Universo do Código
 
-![GitHub Explorer Banner](https://via.placeholder.com/1200x600/0f172a/6d28d9?text=GitHub+Explorer+Pro)
+Você já se sentiu sobrecarregado ao tentar encontrar perfis de desenvolvedores e navegar por seus projetos no GitHub? A interface, embora poderosa, muitas vezes pode parecer utilitária demais, faltando uma experiência mais focada e agradável.
 
-> Discover developer stories, explore repositories, and navigate the open-source universe with a modern, high-performance interface.
+O **GitHub Explorer** nasceu dessa necessidade. Ele transforma a exploração de perfis do GitHub em uma jornada visualmente atraente e direta. Em vez de se perder em abas, você obtém uma visão clara e organizada da história de um desenvolvedor, seus projetos mais importantes e sua atividade, tudo em um design moderno e limpo.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
-[![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Deploy with Vercel](https://vercel.com/button)](https://github-explorer-jcnok.vercel.app/)
 
-## ✨ Features
+*(Observação: Você pode substituir o link acima pelo link de deploy do seu projeto na Vercel.)*
 
-*   **🎨 Modern UI/UX:** Glassmorphism, smooth animations, and storytelling elements to engage users.
-*   **🌓 Dark/Light Theme:** System-aware theming with manual toggle and persistence.
-*   **⚡ High Performance:** Debounced search, optimized rendering, and clean code architecture.
-*   **📱 Fully Responsive:** Mobile-first design that looks great on any device.
-*   **🔍 Advanced Search:** Real-time user lookup using GitHub's REST API.
-*   **📄 Pagination:** Efficient pagination for browsing large repository lists.
+![Pré-visualização do GitHub Explorer](https://via.placeholder.com/1200x600/0f172a/6d28d9?text=GitHub+Explorer+App)
 
-## 🚀 Deploy no GitHub Pages
+---
 
-Este projeto foi configurado com `HashRouter` para ser totalmente compatível com o GitHub Pages.
+## ✨ Funcionalidades Principais
 
-### Passo a Passo para Deploy:
+*   **Busca Inteligente de Usuários:** Encontre qualquer desenvolvedor no GitHub com uma busca rápida e em tempo real.
+*   **Perfil de Usuário Detalhado:** Visualize informações essenciais do perfil, incluindo biografia, contagem de seguidores, e um link direto para o perfil no GitHub.
+*   **Listagem de Repositórios com Paginação:** Navegue facilmente por todos os repositórios de um usuário com um sistema de paginação simples.
+*   **Tema Claro e Escuro (Dark/Light Mode):** Alterne entre os temas para uma experiência de visualização confortável a qualquer hora do dia. O tema escolhido é salvo para sua próxima visita.
+*   **Design Responsivo:** Acesse de qualquer dispositivo, seja no desktop, tablet ou celular, com uma interface que se adapta perfeitamente.
 
-1.  **Crie um repositório** no GitHub.
-2.  **Suba os arquivos** do projeto para o repositório (commits).
-3.  Vá até a aba **Settings** (Configurações) do repositório.
-4.  No menu lateral esquerdo, clique em **Pages**.
-5.  Em **Build and deployment** > **Branch**, selecione `main` (ou `master`) e a pasta `/root` (ou a pasta onde estão seus arquivos).
-6.  Clique em **Save**.
+## 🚀 Como Usar a Aplicação
 
-O GitHub irá gerar um link (ex: `https://seu-usuario.github.io/seu-repositorio/`). A aplicação funcionará imediatamente.
+1.  **Pesquise por um Usuário:** Na página inicial, digite o nome de usuário do GitHub que deseja encontrar e pressione Enter ou clique no botão de busca.
+2.  **Explore o Perfil:** Se o usuário for encontrado, você verá um card com suas informações principais. Clique neste card para ser levado à página de detalhes.
+3.  **Navegue pelos Repositórios:** Na página de detalhes, você encontrará uma lista dos repositórios públicos do usuário. Use os botões de paginação na parte inferior para ver mais projetos.
+4.  **Alterne o Tema:** Clique no ícone de sol/lua no canto superior direito para mudar o tema da aplicação.
 
-## 🛠️ Stack Tecnológica
+## 🛠️ Tecnologias Utilizadas
 
-*   **Core:** React 18, TypeScript
-*   **Estilização:** Tailwind CSS, CSS Variables
-*   **Roteamento:** React Router DOM (HashRouter)
-*   **Dados:** GitHub REST API
-*   **Ícones:** SVG Icons otimizados (sem dependências externas pesadas)
+*   **Core:** React, TypeScript
+*   **Build Tool:** Vite
+*   **Estilização:** Tailwind CSS
+*   **Roteamento:** React Router DOM
+*   **Requisições API:** GitHub REST API (via `fetch`)
 
-## 📁 Estrutura de Pastas
+## ⚙️ Como Rodar o Projeto Localmente
 
-```
-/
-├── components/         # Componentes de UI reutilizáveis
-│   ├── Hero.tsx       # Seção de marketing inicial
-│   ├── Navbar.tsx     # Barra de navegação responsiva
-│   ├── UserCard.tsx   # Card de exibição de usuário
-│   ├── RepoList.tsx   # Lista de repositórios
-│   └── ...
-├── lib/               # Contextos e utilitários
-│   └── ThemeContext.tsx
-├── services/          # Integração com APIs
-│   └── githubService.ts
-├── types/             # Definições de Tipos TypeScript
-├── App.tsx            # Componente Raiz e Roteamento
-├── index.html         # Ponto de entrada (Import Maps & Tailwind)
-└── index.tsx          # Renderização React
-```
+Para executar este projeto em sua máquina local, siga os passos abaixo:
 
-## 🤝 Contribuição
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/Jcnok/Github-Explorer.git
+    ```
 
-Contribuições são bem-vindas! Por favor, sinta-se à vontade para enviar um Pull Request.
+2.  **Navegue até o diretório do projeto:**
+    ```bash
+    cd Github-Explorer
+    ```
 
-1.  Fork o projeto
-2.  Crie sua Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4.  Push para a Branch (`git push origin feature/AmazingFeature`)
-5.  Abra um Pull Request
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+4.  **Execute o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+5.  Abra seu navegador e acesse `http://localhost:5173` (ou a porta indicada no seu terminal).
 
 ## 📝 Licença
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+Este projeto é distribuído sob a licença MIT.
